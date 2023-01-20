@@ -1,0 +1,5 @@
+name: Multistep example Module
+type: module
+description: Multistep Example Module
+package: example
+core_version_requirement: ^9.2 || ^10

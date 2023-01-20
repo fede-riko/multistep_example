@@ -1,0 +1,17 @@
+<?php
+
+use Drupal\multistep_example\Form\MultistepExample\MultistepExampleForm;
+
+/**
+* Implements hook_theme().
+*/
+function multistep_example_theme($existing, $type, $theme, $path): array {
+  $steps = MultistepExampleForm::STEPS;
+  $theme = [];
+  foreach($steps as $step) {
+    $theme['multistep_example_' . $step] = [
+      'render element' => 'form',
+    ];
+  }
+  return $theme;
+}
