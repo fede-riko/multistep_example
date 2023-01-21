@@ -63,4 +63,11 @@ class MultistepExampleBlock extends BlockBase implements ContainerFactoryPluginI
     return $form ?? [];
   }
 
+  /**
+   * @return int
+   */
+  public function getCacheMaxAge() {
+    return 0;
+  }
+
 }
